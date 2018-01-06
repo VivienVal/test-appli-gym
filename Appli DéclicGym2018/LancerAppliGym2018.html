@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>GYM SOL FILLE</title>
+<link rel="stylesheet" media="screen" href="prog\styles_DG.css" type="text/css"/>
+<script src="prog\code_DG.js"></script>
+</head>
+
+<body>
+
+<div id ="page"> <!-- permet de positionner les autres éléments par rapport à celui là -->
+	<div id="enTete"></>
+		<div id="boutons"></>
+			<button class="bouton" id="accueil" onclick="Maison()"><img class="imgBouton" src="media\image\z-accueil.png"></button>
+			<button class="bouton" id="valider" onclick="ValiderChoix()"><img class="imgBouton" src="media\image\z-Valider.png"></button>
+			<button class="bouton" id="masquer" onclick="Masquer()"><img class="imgBouton" src="media\image\z-masquer.png"></button>
+			<button class="bouton" id="aide" onclick="Aide()"><img class="imgBouton" src="media\image\z-aide.png"></button>
+			<button class="bouton" id="bloquer" onclick="Bloquer()"><img class="imgBouton" src="media\image\z-bloquer.png"></button>
+			<div id="texte">Clic pour zoomer et clic sur le zoom pour visionner ; Autres fonctions : clic ?</div>
+			<!--<div id="texte"><input type="password"><button onclick="Password">Ok</button></div>-->
+			<button id="nbImage">Nb Img</></button>
+		</div>
+		<div id="legende"></> <!-- voir pour le mettre en js -->
+			<img id="couleur" src="media\image\z-couleur1.png" ></img>
+			<img id="couleur" src="media\image\z-couleur2.png" ></img>
+			<img id="couleur" src="media\image\z-couleur3.png" ></img>
+			<img id="couleur" src="media\image\z-couleur4.png" ></img>
+			<img id="couleur" src="media\image\z-couleur5.png" ></img>
+			<img id="couleur" src="media\image\z-couleur6.png" ></img>
+		
+		</div>
+	</div>
+	<!--<div id="famille">  à supprimmer remplacé par la légende
+	<img id="fA" src="media\image\imagefA.png" onclick="famille(this.id)"></img>
+	<img id="fB" src="media\image\imagefB.png" onclick="famille(this.id)"></img>
+	<img id="fC" src="media\image\imagefC.png" onclick="famille(this.id)"></img>
+	<img id="fD" src="media\image\imagefD.png" onclick="famille(this.id)"></img>
+	</div>    -->
+	
+	<div id="images">
+	<!-- programmé dans JS
+		<div id="contImage">
+		<img id="image1" src="media/image/image1.png" onclick="zoomImg(this.id)">
+		<div class="zoneClic" id="zoneClic1" onclick="ChoixImg(this.id)"></div>
+		<div class="cercle" id="cercle1" onclick="SupSelect(this.id)"></div>
+		</div>
+	-->
+	</div>
+	<div id="apercu" ></div>
+	<!--programmé dans JS <div id="apercu" ><img src="image2.png" style="width:500px; height:500px; position:absolute; top:100px; left:100px;" ></img></div>-->
+	
+</div>
+
+ 
+</body>
+</html>

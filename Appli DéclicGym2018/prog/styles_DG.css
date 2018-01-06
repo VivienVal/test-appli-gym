@@ -1,0 +1,110 @@
+/* - Utilisation de flexbox pour la mise en page*/	
+#page {width: 1160px; height: 720px; display:flex; flex-wrap:wrap; background: #CCCBCB;}
+
+#enTete{
+	display:flex;
+	justify-content: flex-start;/* alin*/
+	height:49px;
+	width:1160px;
+	background:black;
+	}
+#boutons{
+	display:flex;
+	justify-content: space-around;/* alignement horizontal équilibré*/
+	height:49px;
+	width:780px;
+	background:#a8a296;
+	font-size:18px;
+	font-weight:bold;
+	vertical-align:text-top;
+	color:white;
+}
+#texte{width:400px;}
+#legende{
+	display:flex;
+	flex-wrap:nowvrap;
+	height:49px;
+	width:420px;
+	
+}
+#couleur{
+	width:63px; height:50px;}
+#couleur:hover{width:100px; height:60px;}
+
+
+.bouton{width:60px; height:49px;font-weight:bold;}
+#nbImage{width:105px;color:#5c3d2d;font-weight:bold;}
+
+img {
+	width:40px; 
+	height:40px;
+	cursor:pointer;
+}
+/*img:hover{width:200px;height:200px;}*/
+
+#images {/*conteneur des images*/
+	width: 100%; 
+	height:100%;/* nécessaire pour placer les images sur la page*/
+	background:black; /*#a8a296;*/
+	display:flex;
+	align-content:stretch;
+	flex-wrap:wrap;/*mise à la ligne*/
+}
+#contImage{/* conteneur pour une image, zone clic et cercle*/
+	position:relative;/*mettre en position relative, pour mettre les cercles dedans*/
+	/*width:240px; 
+	height:135px;*/
+}
+.cercle{
+position:absolute;
+display:none;
+background:#6bc519; 
+border-radius:50%; 
+border:1px solid black;
+width:40px; 
+height:40px; 
+top:00px;}
+
+.zoneClic{
+position:absolute;
+//background:orange;
+border:1px dotted black;
+width:40px; 
+height:40px; 
+top:00px;
+cursor:Crosshair;
+}
+
+#apercu {/*zoom et vidéo*/
+	position:absolute;
+	background:black;
+	top:200px;
+	left:150px;
+	vertical-align:top;
+}
+
+#imgBouton{width:20px; height;40px;}/*ne marche pas à voir*/
+/*
+
+
+
+#famille{/*conteneur famille*/
+/*
+	height:1350px;
+	width:40px;
+	background:white;
+	display:flex;
+	align-content:stretch;
+	flex-direction:column;/*mise à la ligne*/
+	/*
+}
+#fA{width:50px; height:135px;}
+#fB,#fC,#fD{width:50px; height:405px;}
+
+
+
+
+
+
+/*img:hover {position:absolute; left:100px; top:100px;width:570px;height:276px;}
+img:hover {flex:2;}*/
