@@ -43,7 +43,7 @@ function Initialise(){
 	for (i=1; i<57; i++) {
 		n=tableauImage[i];	
 		if(n>0){
-			lesImages+='<div id="contImage" style="width:'+w+'px; height:'+h+'px;"><img id="image'+n+'" style="width:'+w+'px; height:'+h+'px;" src="media/image/image'+n+'.png" onclick="zoomImg(this.id)"><div class="zoneClic" id="zoneClic'+n+'" onclick="ChoixImg(this.id)"></div><div class="cercle" id="cercle'+n+'" onclick="SupSelect(this.id)"></div></div>'
+			lesImages+='<div id="contImage" style="width:'+w+'px; height:'+h+'px;"><img id="image'+n+'" style="width:'+w+'px; height:'+h+'px;" src="media/image/image'+n+'.PNG" onclick="zoomImg(this.id)"><div class="zoneClic" id="zoneClic'+n+'" onclick="ChoixImg(this.id)"></div><div class="cercle" id="cercle'+n+'" onclick="SupSelect(this.id)"></div></div>'
 		}
 	}
 	document.getElementById("images").innerHTML=lesImages;
