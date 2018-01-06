@@ -56,7 +56,7 @@ function zoomImg(id) {// au clic sur l'image : zoom
 		i=idImage.substr(5);
 		
 		document.getElementById("apercu").style.display = "block";
-		zoom='<img src="media/image/image'+i+'.png" style="width:800px; height:500px;" onclick="clicVideo(this.id)"></img';
+		zoom='<img src="media/image/image'+i+'.PNG" style="width:800px; height:500px;" onclick="clicVideo(this.id)"></img';
 		document.getElementById("apercu").innerHTML=fenetre+zoom;
 	}
 }
